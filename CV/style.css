@@ -24,7 +24,7 @@ ul {
 .grid-container {
     display: grid;
     grid-template-columns: 33% 67%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 20% 20% 20% 15%;
     background-color: white;
     height: 1000px;
     width: 800px;
@@ -57,8 +57,34 @@ p {
     padding: 20px;
 }
 
+#first-name, #surname, #title {
+    display: flex;
+}
+
 .name {
     grid-area: 1 / 2 ;
+    justify-self: center;
+    width: 80%;
+    padding: 0;
+}
+
+#first-name {
+    justify-content: flex-start;
+    font-size: 65px;
+    margin-bottom: -5px;
+}
+#surname {
+    justify-content: flex-end;
+    font-size: 65px;    
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+#title {
+    justify-content: center;
+    font-size: 35px;
+    color: grey;
+    margin: 0;
 }
 
 .about-me {
@@ -83,4 +109,11 @@ p {
 
 .contact {
     grid-area: 2 / 1;
+}
+
+.photo {
+    grid-area: 1 / 1 ;
+    width: 80%;
+    height: 100%;
+    justify-self: center;
 }
