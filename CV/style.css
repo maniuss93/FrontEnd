@@ -12,19 +12,20 @@ body {
 
 ul {
     padding-left: 20px;
+    margin: 0;
 }
 
 .left-panel-color {
     background-color: rgb(231,231,231);
-    grid-area: 1 / 1 / 6 / 1;
+    grid-area: 1 / 1 / 38 / 1;
     padding-left: 0;
     padding-top: 0;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 33% 67%;
-    grid-template-rows: 25% 20% 20% 20% 15%;
+    grid-template-columns: 35% 10% 55%;
+    grid-template-rows: 20% 5% repeat(35, 1fr);
     background-color: white;
     height: 1000px;
     width: 800px;
@@ -32,11 +33,14 @@ ul {
 
 h1 {
     font-size: 36px;
-
 }
 
 h2 {
     font-size: 24px;
+    margin: 3px;
+}
+
+h3 {
     margin: 3px;
 }
 
@@ -51,10 +55,11 @@ span {
 }
 
 p {
-    margin: 3px;
+    margin: 1px;
 }
 .grid-box {
-    padding: 20px;
+    display: grid;
+    padding-left: 20px;
 }
 
 #first-name, #surname, #title {
@@ -62,7 +67,7 @@ p {
 }
 
 .name {
-    grid-area: 1 / 2 ;
+    grid-area: 1 / 2 / 3 / 4 ;
     justify-self: center;
     width: 80%;
     padding: 0;
@@ -70,50 +75,78 @@ p {
 
 #first-name {
     justify-content: flex-start;
-    font-size: 65px;
     margin-bottom: -5px;
 }
 #surname {
     justify-content: flex-end;
-    font-size: 65px;    
     margin-top: -15px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
+
+#first-name, #surname {
+    height: fit-content;
+    font-size: 65px;    
+}
+
 
 #title {
     justify-content: center;
+    font-size: 65px;    
     font-size: 35px;
     color: grey;
     margin: 0;
 }
 
-.about-me {
-    grid-area: 3 / 1 ;
+.section {
+    justify-self: flex-start;
+    align-self: flex-start;
 }
 
-.education {
-    grid-area: 2 / 2;
+#education-title {
+    grid-area: 4 / 2 / 6 / 4;
 }
 
-.experience {
-    grid-area: 3 / 2;
+#education {
+    grid-area: 6 / 3 / 18 / 4;
 }
 
-.skills {
-    grid-area: 4 / 1;
+#experience-title {
+    grid-area: 19 / 2 / 21 / 4;
 }
 
-.languages {
-    grid-area: 5 / 1;
-}
-
-.contact {
-    grid-area: 2 / 1;
+#experience {
+    grid-area: 21 / 3 / 35 / 4;
 }
 
 .photo {
-    grid-area: 1 / 1 ;
+    grid-area: 1 / 1 / 3 / 1;
     width: 80%;
     height: 100%;
     justify-self: center;
 }
+
+.contact {
+    grid-area: 4 / 1 / 8 / 1;
+}
+
+.about-me {
+    grid-area: 9 / 1 / 17 / 1;
+}
+
+.skills {
+    grid-area: 18 / 1 / 27 / 1;
+}
+
+.certificates {
+    grid-area: 28 / 1 / 34 / 1;
+}
+
+.languages {
+    grid-area: 35 / 1 / 36 / 1;
+}
+
+
+
+
+
+
