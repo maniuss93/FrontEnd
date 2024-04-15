@@ -10,29 +10,237 @@ body {
     padding-bottom: 3%;
 }
 
-ul {
-    padding-left: 20px;
-    margin: 0;
+.grid-container {
+    display: grid;
+    grid-template-columns: 2% 35% 2% 3% 58%;
+    grid-template-rows: 20% 5% repeat(35, 1fr);
+    background-color: white;
+    height: 1240px;
+    width: 874px;
 }
+
+.name {
+    grid-area: 1 / 4 / 3 / 6;
+    justify-self: center;
+    width: 80%;
+    padding: 0;
+}
+
+#education-title {
+    grid-area: 12 / 5 / 14 / 6;
+}
+
+#education {
+    grid-area: 14 / 5 / 19 / 6;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 27% 70% 3%;
+}
+
+.education1 {
+    grid-area: 1 / 2 / 2 / 2;
+}
+
+.education1-title{
+    font-size: 16px;
+}
+
+.education2 {
+    grid-area: 2 / 2 / 2 / 3;
+}
+
+.education2-title{
+    font-size: 16px;
+}
+
+.title {
+    grid-area: 2 / 2 / 2 / 4;
+}
+
+#experience-title {
+    grid-area: 19 / 5 / 21 / 6;
+}
+
+#experience {
+    grid-area: 21 / 5 / 29 / 6;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 27% 70% 3%;
+}
+
+.experience1-title {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.experience2-title {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#techstack-title {
+    grid-area: 4 / 5 / 6 / 6;
+}
+
+#techstack {
+    grid-area: 6 / 5 / 12 / 6;
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+}
+
+.tech-list {
+    grid-area: 1 / 1 / 1 / 1;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0;
+    margin: 0;
+} 
+
+#tech1 {
+    grid-area: 1 / 1 / 1 / 1;
+}
+#tech2 {
+    grid-area: 2 / 1 / 2 / 1;
+}
+#tech3 {
+    grid-area: 1 / 2 / 1 / 2;
+}
+#tech4 {
+    grid-area: 2 / 2 / 2 / 2;
+}
+#tech5 {
+    grid-area: 1 / 3 / 1 / 3;
+}
+#tech6 {
+    grid-area: 2 / 3 / 2 / 3;
+}
+#tech7 {
+    grid-area: 1 / 4 / 1 / 4;
+}
+#tech8 {
+    grid-area: 2 / 4 / 2 / 4;
+} 
+#tech9 {
+    grid-area: 3 / 1 / 1 / 3;
+} 
+#tech10 {
+    grid-area: 2 / 4 / 2 / 4;
+} 
+#tech11 {
+    grid-area: 2 / 4 / 2 / 4;
+} 
+#tech12 {
+    grid-area: 2 / 4 / 2 / 4;
+} 
+#tech13 {
+    grid-area: 2 / 4 / 2 / 4;
+} 
+#tech14 {
+    grid-area: 2 / 4 / 2 / 4;
+} 
+#tech15 {
+    grid-area: 2 / 4 / 2 / 4;
+} 
+#tech16 {
+    grid-area: 2 / 4 / 2 / 4;
+} 
+#tech17 {
+    grid-area: 2 / 4 / 2 / 4;
+} 
+#tech18 {
+    grid-area: 2 / 4 / 2 / 4;
+} 
+
+/* .tech-list2 {
+    grid-area: 3 / 2 / 5 / 4;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: 20% 22% 14% 26% 20% 20%;
+}
+
+#tech9 {
+    grid-area: 1 / 1 / 1 / 1;
+}
+#tech10 {
+    grid-area: 2 / 1 / 2 / 1;
+}
+#tech11 {
+    grid-area: 1 / 2 / 1 / 2;
+}
+#tech12 {
+    grid-area: 2 / 2 / 2 / 2;
+}
+#tech13 {
+    grid-area: 1 / 3 / 1 / 3;
+}
+#tech14 {
+    grid-area: 2 / 3 / 2 / 3;
+}
+#tech15 {
+    grid-area: 1 / 4 / 1 / 4;
+}
+#tech16 {
+    grid-area: 2 / 4 / 2 / 4;
+}
+#tech17 {
+    grid-area: 1 / 5 / 1 / 5;
+}
+#tech18 {
+    grid-area: 2 / 5 / 2 / 5;
+}
+#tech19 {
+    grid-area: 1 / 6 / 1 / 6;
+}
+#tech20 {
+    grid-area: 2 / 6 / 2 / 6;
+} */
 
 .left-panel-color {
     background-color: rgb(231,231,231);
-    grid-area: 1 / 1 / 38 / 1;
+    grid-area: 1 / 1 / 38 / 4;
     padding-left: 0;
     padding-top: 0;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 35% 10% 55%;
-    grid-template-rows: 20% 5% repeat(35, 1fr);
-    background-color: white;
-    height: 1000px;
-    width: 800px;
+.photo {
+    grid-area: 1 / 1 / 3 / 4;
+    width: 70%;
+    height: 100%;
+    justify-self: center;
+}
+
+.contact {
+    grid-area: 4 / 2 / 8 / 4;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 10% 90%;
+    
+}
+
+#email {
+    grid-area: 2 / 2 / 5 / 4;
+}
+
+#github {
+    grid-area: 3 / 2 / 5 / 4;
+}
+
+#linkedin {
+    grid-area: 4 / 2 / 5 / 4;
+}
+
+.about-me {
+    grid-area: 9 / 2 / 17 / 4;
+}
+
+.skills {
+    grid-area: 18 / 2 / 27 / 4;
+}
+
+.certificates {
+    grid-area: 28 / 2 / 34 / 4;
+}
+
+.languages {
+    grid-area: 35 / 2 / 36 / 4;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 28px;
 }
 
 h2 {
@@ -59,40 +267,30 @@ p {
 }
 .grid-box {
     display: grid;
-    padding-left: 20px;
 }
 
 #first-name, #surname, #title {
     display: flex;
+    height: fit-content;
 }
 
-.name {
-    grid-area: 1 / 2 / 3 / 4 ;
-    justify-self: center;
-    width: 80%;
-    padding: 0;
+#first-name, #surname {
+    font-size: 60px;    
 }
 
 #first-name {
     justify-content: flex-start;
-    margin-bottom: -5px;
+    margin-bottom: -20px;
 }
 #surname {
     justify-content: flex-end;
-    margin-top: -15px;
+    margin-top: -30px;
     margin-bottom: 0;
 }
 
-#first-name, #surname {
-    height: fit-content;
-    font-size: 65px;    
-}
-
-
 #title {
-    justify-content: center;
-    font-size: 65px;    
-    font-size: 35px;
+    justify-content: center;   
+    font-size: 30px;
     color: grey;
     margin: 0;
 }
@@ -102,48 +300,22 @@ p {
     align-self: flex-start;
 }
 
-#education-title {
-    grid-area: 4 / 2 / 6 / 4;
+.languages ul, .skills ul {
+    padding-left: 6%;
+    margin: 0;
 }
 
-#education {
-    grid-area: 6 / 3 / 18 / 4;
+.certificates li, .experience1-title li, .experience2-title li, .tech-list li {
+    list-style-type: none;
 }
 
-#experience-title {
-    grid-area: 19 / 2 / 21 / 4;
+.certificates ul, #experience ul, #education ul {
+    padding-left: 0;
 }
 
-#experience {
-    grid-area: 21 / 3 / 35 / 4;
-}
 
-.photo {
-    grid-area: 1 / 1 / 3 / 1;
-    width: 80%;
-    height: 100%;
-    justify-self: center;
-}
 
-.contact {
-    grid-area: 4 / 1 / 8 / 1;
-}
 
-.about-me {
-    grid-area: 9 / 1 / 17 / 1;
-}
-
-.skills {
-    grid-area: 18 / 1 / 27 / 1;
-}
-
-.certificates {
-    grid-area: 28 / 1 / 34 / 1;
-}
-
-.languages {
-    grid-area: 35 / 1 / 36 / 1;
-}
 
 
 
