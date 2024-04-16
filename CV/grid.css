@@ -1,0 +1,178 @@
+.grid-container {
+    grid-template-columns: 2% 35% 2% 3% 58%;
+    grid-template-rows: 20% 5% repeat(35, 1fr);
+}
+
+.name {
+    grid-area: 1 / 4 / 3 / 6;
+}
+
+#education-title {
+    grid-area: 12 / 5 / 14 / 6;
+}
+
+#education {
+    grid-area: 14 / 5 / 19 / 6;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 27% 70% 3%;
+}
+
+.education1 {
+    grid-area: 1 / 2 / 2 / 2;
+}
+
+.education2 {
+    grid-area: 2 / 2 / 2 / 3;
+}
+
+.title {
+    grid-area: 2 / 2 / 2 / 4;
+}
+
+#experience-title {
+    grid-area: 19 / 5 / 21 / 6;
+}
+
+#experience {
+    grid-area: 21 / 5 / 29 / 6;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 27% 70% 3%;
+}
+
+.experience1-title {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.experience2-title {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#techstack-title {
+    grid-area: 4 / 5 / 6 / 6;
+}
+
+#techstack {
+    grid-area: 6 / 5 / 12 / 6;
+    grid-template-rows: 100%;
+    grid-template-columns: 97% 3%;
+}
+
+.tech-list {
+    grid-area: 1 / 1 / 1 / 1;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+#tech1 {
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+#tech2 {
+    grid-area: 2 / 1 / 2 / 1;
+}
+
+#tech3 {
+    grid-area: 3 / 1 / 3 / 1;
+}
+
+#tech4 {
+    grid-area: 1 / 2 / 1 / 2;
+}
+
+#tech5 {
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+#tech6 {
+    grid-area: 3 / 2 / 3 / 2;
+}
+
+#tech7 {
+    grid-area: 1 / 3 / 1 / 3;
+}
+
+#tech8 {
+    grid-area: 2 / 3 / 2 / 3;
+} 
+
+#tech9 {
+    grid-area: 3 / 3 / 3 / 3;
+} 
+
+#tech10 {
+    grid-area: 1 / 4 / 1 / 4;
+} 
+
+#tech11 {
+    grid-area: 2 / 4 / 2 / 4;
+} 
+
+#tech12 {
+    grid-area: 3 / 4 / 3 / 4;
+} 
+#tech13 {
+    grid-area: 1 / 5 / 1 / 5;
+} 
+
+#tech14 {
+    grid-area: 2 / 5 / 2 / 5;
+} 
+
+#tech15 {
+    grid-area: 3 / 5 / 3 / 5;
+} 
+
+#tech16 {
+    grid-area: 1 / 6 / 1 / 6;
+} 
+
+#tech17 {
+    grid-area: 2 / 6 / 2 / 6;
+} 
+
+#tech18 {
+    grid-area: 3 / 6 / 3 / 6;
+} 
+
+.left-panel {
+    grid-area: 1 / 1 / 38 / 4;
+}
+
+.photo {
+    grid-area: 1 / 1 / 3 / 4;
+}
+
+.contact {
+    grid-area: 4 / 2 / 8 / 4;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 10% 90%;
+}
+
+#email {
+    grid-area: 2 / 2 / 5 / 4;
+}
+
+#github {
+    grid-area: 3 / 2 / 5 / 4;
+}
+
+#linkedin {
+    grid-area: 4 / 2 / 5 / 4;
+}
+
+.about-me {
+    grid-area: 9 / 2 / 17 / 4;
+}
+
+.skills {
+    grid-area: 18 / 2 / 27 / 4;
+}
+
+.certificates {
+    grid-area: 28 / 2 / 34 / 4;
+}
+
+.languages {
+    grid-area: 35 / 2 / 36 / 4;
+}
